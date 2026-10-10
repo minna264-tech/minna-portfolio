@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Minna Shibu | Career Portfolio</title>
+<style>
+:root {
+  --navy: #142744;
+  --blue: #3567c8;
+  --pale: #eef3fc;
+  --ink: #28354a;
+  --muted: #64748b;
+  --white: #ffffff;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: Arial, sans-serif;
+  color: var(--ink);
+  background: #f5f7fb;
+  line-height: 1.7;
+}
+header {
+  background: linear-gradient(130deg, #142744, #315ba3);
+  color: white;
+  padding: 65px 20px 55px;
+  text-align: center;
+}
+header h1 { font-size: clamp(32px, 6vw, 48px); letter-spacing: 1px; }
+header p { color: #e0eaff; margin-top: 7px; }
+.tag {
+  display: inline-block;
+  background: #e5edff;
+  color: #193867;
+  border-radius: 30px;
+  padding: 6px 16px;
+  margin-top: 18px;
+  font-size: 14px;
+}
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 22px;
+  flex-wrap: wrap;
+  padding: 15px;
+  background: white;
+  position: sticky;
+  top: 0;
+  z-index: 5;
+  box-shadow: 0 2px 12px #14274410;
+}
+nav a { color: var(--navy); text-decoration: none; font-size: 13px; font-weight: bold; }
+nav a:hover { color: var(--blue); }
+main { max-width: 1000px; margin: 32px auto; padding: 0 18px; }
+section {
+  background: white;
+  padding: 28px;
+  margin-bottom: 23px;
+  border-radius: 15px;
+  box-shadow: 0 5px 22px #1427440a;
+  scroll-margin-top: 80px;
+}
+h2 { color: var(--navy); font-size: 23px; margin-bottom: 14px; }
+h3 { color: #294d87; font-size: 17px; margin-bottom: 4px; }
+p { margin-bottom: 9px; }
+.intro { font-size: 17px; }
+.small { color: var(--muted); font-size: 14px; }
+.grid { display: grid; grid-template-columns: repeat(auto-fit,minmax(210px,1fr)); gap: 15px; }
+.card {
+  background: #f4f7fd;
+  padding: 17px;
+  border-radius: 11px;
+  border-top: 3px solid #7296df;
+}
+.card p { font-size: 14px; margin-top: 6px; }
+.item { border-left: 3px solid #8da9e6; padding: 0 0 17px 17px; margin: 17px 0; }
+.pills { display: flex; flex-wrap: wrap; gap: 9px; margin-top: 12px; }
+.pills span {
+  background: var(--pale);
+  color: #294d87;
+  padding: 6px 11px;
+  border-radius: 7px;
+  font-size: 13px;
+}
+table { width: 100%; border-collapse: collapse; font-size: 14px; }
+th, td { text-align: left; padding: 12px 10px; border-bottom: 1px solid #e5eaf2; vertical-align: top; }
+th { background: #edf3ff; color: var(--navy); }
+.table-wrap { overflow-x: auto; }
+.note { background: #f0f5ff; border-radius: 10px; padding: 14px; font-size: 14px; }
+footer { text-align: center; padding: 28px 15px; color: var(--muted); font-size: 13px; }
+@media(max-width:600px) {
+  header { padding: 45px 16px; }
+  section { padding: 19px; }
+  nav { gap: 12px; }
+  nav a { font-size: 12px; }
+  th, td { padding: 9px 7px; }
+}
+@media print {
+  nav { display: none; }
+  body { background: white; }
+  section { box-shadow: none; border: 1px solid #ddd; break-inside: avoid; }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Minna Shibu</h1>
+  <p>B.Tech Biotechnology Student</p>
+  <p>Aspiring Data Analyst | Lovely Professional University</p>
+  <span class="tag">My CV · Career Roadmap · Individual Development Plan</span>
+</header>
+
+<nav>
+  <a href="#about">About</a>
+  <a href="#education">Education</a>
+  <a href="#career">Career Path</a>
+  <a href="#skills">Skills</a>
+  <a href="#roadmap">Roadmap</a>
+  <a href="#idp">Four-Year IDP</a>
+</nav>
+
+<main>
+
+<section id="about">
+  <h2>01. Professional Profile</h2>
+  <p class="intro">
+    I am a B.Tech Biotechnology student at Lovely Professional University
+    with a strong academic background and an interest in data analysis.
+    My goal is to combine scientific knowledge, analytical thinking and
+    digital tools to understand data and support evidence-based decisions.
+  </p>
+  <p>
+    I plan to build my technical skills progressively through coursework,
+    practical exercises, certifications and internships. I am particularly
+    interested in exploring data analytics in healthcare, biotechnology
+    and other industries.
+  </p>
+  <div class="pills">
+    <span>Biotechnology</span><span>Data Analytics</span>
+    <span>Continuous Learning</span><span>Problem Solving</span>
+  </div>
+</section>
+
+<section id="education">
+  <h2>02. Education</h2>
+  <div class="item">
+    <h3>B.Tech Biotechnology</h3>
+    <p>Lovely Professional University, Punjab</p>
+    <p class="small">Expected graduation: 2030</p>
+  </div>
+  <div class="item">
+    <h3>Class XII — CBSE | 90.8%</h3>
+    <p>St. Mary's Public School, Thamarachal, Kizhakkambalam</p>
+  </div>
+  <div class="item">
+    <h3>Class X — CBSE | 95.8%</h3>
+    <p>St. Mary's Public School, Thamarachal, Kizhakkambalam</p>
+  </div>
+  <h3>Languages</h3>
+  <p>English · Hindi · Malayalam</p>
+</section>
+
+<section id="career">
+  <h2>03. Dream Career — Data Analyst</h2>
+  <p>
+    A Data Analyst collects, cleans, examines and visualizes data to identify
+    patterns and help organizations make informed decisions.
+  </p>
+  <div class="grid">
+    <div class="card">
+      <h3>Responsibilities</h3>
+      <p>Organize datasets, analyse trends, prepare reports and communicate findings.</p>
+    </div>
+    <div class="card">
+      <h3>Industries of Interest</h3>
+      <p>Healthcare, biotechnology, pharmaceuticals, research and business.</p>
+    </div>
+    <div class="card">
+      <h3>Career Goal</h3>
+      <p>Qualify for an entry-level data analyst role after graduation by building practical, demonstrable skills.</p>
+    </div>
+  </div>
+  <h3 style="margin-top:22px">Core Competencies to Develop</h3>
+  <div class="pills">
+    <span>Excel</span><span>SQL</span><span>Python</span>
+    <span>Statistics</span><span>Power BI</span>
+    <span>Data Visualization</span><span>Communication</span>
+    <span>Critical Thinking</span>
+  </div>
+</section>
+
+<section id="skills">
+  <h2>04. Skills and Certification Plan</h2>
+  <p>
+    These are planned learning areas. I will update this section as I complete
+    training and gain practical experience.
+  </p>
+  <div class="grid" style="margin-top:15px">
+    <div class="card">
+      <h3>Microsoft Excel</h3>
+      <p>Formulas, sorting, filtering, PivotTables and charts.</p>
+    </div>
+    <div class="card">
+      <h3>SQL</h3>
+      <p>Queries, filtering, joins, grouping and aggregation.</p>
+    </div>
+    <div class="card">
+      <h3>Python</h3>
+      <p>Programming basics, data handling and analysis using pandas.</p>
+    </div>
+    <div class="card">
+      <h3>Statistics</h3>
+      <p>Descriptive statistics, distributions, correlation and interpretation.</p>
+    </div>
+    <div class="card">
+      <h3>Power BI</h3>
+      <p>Data modelling, dashboards, visualizations and reporting.</p>
+    </div>
+    <div class="card">
+      <h3>Communication</h3>
+      <p>Explain results clearly, write reports and present insights.</p>
+    </div>
+  </div>
+  <h3 style="margin-top:24px">Suggested Certifications and Learning</h3>
+  <div class="item">
+    <h3>Microsoft Excel training</h3>
+    <p>Practise spreadsheets and complete a small analysis exercise.</p>
+  </div>
+  <div class="item">
+    <h3>SQL and Python beginner courses</h3>
+    <p>Complete guided exercises and demonstrate skills with original work.</p>
+  </div>
+  <div class="item">
+    <h3>Power BI learning path</h3>
+    <p>Learn to build a dashboard and explain the conclusions it supports.</p>
+  </div>
+  <div class="item">
+    <h3>Optional structured career certificate</h3>
+    <p>Consider the Google Data Analytics Professional Certificate or another suitable programme after comparing its syllabus, cost and time commitment.</p>
+  </div>
+  <p class="note">
+    Completion target: select suitable courses, track progress and add certificate
+    names and dates only after actually completing them.
+  </p>
+</section>
+
+<section id="roadmap">
+  <h2>05. Career Pathway: 2026–2030</h2>
+  <div class="item">
+    <h3>Year 1 — Build Foundations</h3>
+    <p>Strengthen academic fundamentals, learn Excel, practise basic statistics and become comfortable using a computer and digital tools.</p>
+    <p><strong>Target:</strong> complete regular exercises and one beginner spreadsheet analysis.</p>
+  </div>
+  <div class="item">
+    <h3>Year 2 — Develop Technical Skills</h3>
+    <p>Learn SQL and Python basics, practise with public datasets and study data cleaning and visualization.</p>
+    <p><strong>Target:</strong> complete one guided course and one original mini-project.</p>
+  </div>
+  <div class="item">
+    <h3>Year 3 — Gain Practical Experience</h3>
+    <p>Develop Power BI skills, create a portfolio, improve communication and apply for relevant internships.</p>
+    <p><strong>Target:</strong> publish two well-documented projects and seek internship experience.</p>
+  </div>
+  <div class="item">
+    <h3>Year 4 — Prepare for Employment</h3>
+    <p>Refine projects, prepare a targeted CV, practise interviews and apply for graduate roles.</p>
+    <p><strong>Target:</strong> complete a capstone project and maintain a consistent job-application plan.</p>
+  </div>
+  <h3>Internship and Placement Strategy</h3>
+  <ul style="padding-left:22px">
+    <li>Explore university career services and verified internship opportunities.</li>
+    <li>Seek data-related roles in healthcare, biotechnology or general business.</li>
+    <li>Build a portfolio showing the question, dataset, method and findings for each project.</li>
+    <li>Practise aptitude tests, SQL questions, case studies and interview communication.</li>
+    <li>Keep higher studies as an alternative pathway if it supports future goals.</li>
+  </ul>
+</section>
+
+<section id="idp">
+  <h2>06. Individual Development Plan (IDP)</h2>
+  <p>
+    My IDP converts my career goal into semester-wise actions. Targets are
+    planned milestones and will be reviewed and adjusted each semester.
+  </p>
+  <div class="table-wrap" style="margin-top:16px">
+    <table>
+      <thead>
+        <tr><th>Semester</th><th>Development Goal</th><th>Measurable Target</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>1</td><td>Digital and academic foundations</td><td>Practise Excel weekly and complete 10 spreadsheet exercises.</td></tr>
+        <tr><td>2</td><td>Spreadsheet analysis</td><td>Complete one small dataset analysis with charts and written findings.</td></tr>
+        <tr><td>3</td><td>SQL foundations</td><td>Practise at least 30 beginner SQL queries.</td></tr>
+        <tr><td>4</td><td>Python foundations</td><td>Complete 20 beginner coding exercises and a small data task.</td></tr>
+        <tr><td>5</td><td>Visualization and statistics</td><td>Build one dashboard and explain its main findings.</td></tr>
+        <tr><td>6</td><td>Portfolio and experience</td><td>Publish two documented projects and apply for relevant internships.</td></tr>
+        <tr><td>7</td><td>Employment preparation</td><td>Polish CV and GitHub; practise at least five mock interviews.</td></tr>
+        <tr><td>8</td><td>Placement readiness</td><td>Complete a capstone, apply to suitable graduate roles and track applications.</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <h3 style="margin-top:24px">Progress Review Method</h3>
+  <div class="grid" style="margin-top:12px">
+    <div class="card">
+      <h3>Plan</h3>
+      <p>Set semester goals and divide them into monthly tasks.</p>
+    </div>
+    <div class="card">
+      <h3>Practise</h3>
+      <p>Maintain a learning log and save evidence of completed exercises.</p>
+    </div>
+    <div class="card">
+      <h3>Review</h3>
+      <p>Review progress at the end of every semester and revise targets.</p>
+    </div>
+  </div>
+</section>
+
+<section id="closing">
+  <h2>07. My Commitment</h2>
+  <p>
+    I aim to grow into a capable data professional while completing my
+    biotechnology degree. Through consistent learning, practical projects,
+    internships and regular progress reviews, I will work towards a career
+    where scientific knowledge and data-driven thinking complement each other.
+  </p>
+  <p class="small">Portfolio prepared for academic and career development purposes.</p>
+</section>
+
+</main>
+
+<footer>
+  Minna Shibu · B.Tech Biotechnology · Expected Graduation 2030
+  <br>Career Portfolio and Individual Development Plan · 2026
+</footer>
+</body>
+</html>
